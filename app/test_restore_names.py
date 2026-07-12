@@ -5,7 +5,11 @@ def test_restore_names_modifies_missing_or_none_first_names() -> None:
     users = [
         {"first_name": None, "last_name": "Holy", "full_name": "Jack Holy"},
         {"last_name": "Adams", "full_name": "Mike Adams"},
-        {"first_name": "Sarah", "last_name": "Connor", "full_name": "Sarah Connor"},
+        {
+            "first_name": "Sarah",
+            "last_name": "Connor",
+            "full_name": "Sarah Connor",
+        },
     ]
 
     restore_names(users)
